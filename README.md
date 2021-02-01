@@ -1,0 +1,1 @@
+# Merge-Small-Files-into-Sequence-File-in-Hadoop
