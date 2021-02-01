@@ -13,4 +13,13 @@ One more disadvantage of maintaining small files, from Mapreduce perspective is 
 
 So, it is not optional but mandatory to convert huge number of small files into less number of large files.
 
+
+### Solutions:
+In order to solve both the problems mentioned above, we need a file format that can store both file name and contents in a single file and it would be a great value add if it also supports file splitting and compression to process efficiently these files in mapreduce jobs.
+
+We will discuss mainly two possible solutions for this.
+
+Merging Small Files into SequenceFile
+Merging Small Files into Avro File
+Both SequenceFile and Avro files supports splitting and compression formats. In this post, we will discuss about the first technique of merging small files into sequencefile and next post we will provide details on merging small files into avro file.
 ![Inkedhadoop1_LI](https://user-images.githubusercontent.com/58120325/106406761-f9699f00-6442-11eb-840d-f8e1e94395b7.jpg)
