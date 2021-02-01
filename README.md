@@ -24,6 +24,8 @@ Merging Small Files into Avro File
 Both SequenceFile and Avro files supports splitting and compression formats. In this post, we will discuss about the first technique of merging small files into sequencefile and next post we will provide details on merging small files into avro file.
 We will merge small files into sequencefile with the help of custom record reader and custom input format classes by extending InputFormat and RecordReader classes from hadoop API.
 
+### How to implement it in Hadoop
+
 We will process each file contents as a single record and we need below two classes to process full file as a record. In this FullFileInputFormat keys are not needed and only contents are needed. So, keys are given as NullWritable and values as BytesWritable.
 
 In order to prevent file splitting, we are overriding isSplittable() method and returning false.
